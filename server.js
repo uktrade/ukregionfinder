@@ -12,9 +12,13 @@ loadRegions()
 const server = http.createServer((req, res) => {
   let message = 'usage: pcode=POSTCODE'
 
-  if(req.url.indexOf('/pcode') === 0) {
+  if (req.url.indexOf('/pcode') === 0) {
     let pcode = req.url.split('=')[1]
     message = findPostcode(pcode)
+  }
+
+  if (req.url.indexOf('/status')) {
+    message = 'OK'
   }
 
   res.statusCode = 200;
