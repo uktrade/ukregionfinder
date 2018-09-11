@@ -1,0 +1,15 @@
+{
+  "name": "ukregion-lookup",
+  "version": "1.0.0",
+  "description": "Microservice for finding DIT regions from a postcode",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "start": "node server.js"
+  },
+  "author": "jim smith",
+  "license": "ISC"
+}
