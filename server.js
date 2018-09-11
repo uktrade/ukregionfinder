@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
     message = findPostcode(pcode)
   }
 
-  if (req.url.indexOf('/status')) {
+  if (req.url.indexOf('/status') === 0) {
     message = 'OK'
   }
 
