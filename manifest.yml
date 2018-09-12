@@ -1,2 +1,4 @@
 applications:
 - name: ukregionlookup
+  memory: 64M
+  disk_quota: 128M
