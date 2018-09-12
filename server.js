@@ -4,7 +4,7 @@ const port = process.env['PORT'] || 8888;
 
 const {
   loadRegions,
-  findPostcode
+  findRegion
 } = require('./lib/postcodeToRegion')
 
 loadRegions()
@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
 
   if (req.url.indexOf('/pcode') === 0) {
     let pcode = req.url.split('=')[1]
-    message = findPostcode(pcode)
+    message = findRegion(pcode)
   }
 
   if (req.url.indexOf('/status') === 0) {
