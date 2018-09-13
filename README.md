@@ -1,4 +1,4 @@
-#UK Region Finder
+# UK Region Finder
 
 This is a simple micrososervice that takes a postcode and returns the DIT Region associated with that postcode. 
 It's basically just a hash table over HTTP, but that means it can be really small and uncomplicated (for now)
