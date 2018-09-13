@@ -11,5 +11,8 @@
     "start": "node server.js"
   },
   "author": "jim smith",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "10.7.0"
+  }
 }
