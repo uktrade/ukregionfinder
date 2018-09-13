@@ -1,3 +1,5 @@
+#UK Region Finder
+
 This is a simple micrososervice that takes a postcode and returns the DIT Region associated with that postcode. 
 It's basically just a hash table over HTTP, but that means it can be really small and uncomplicated (for now)
 
@@ -12,6 +14,7 @@ Note that the table we use only includes the first part of the postcode (postcod
 
 Roadmap
 
+0. Secure access
 1. Support counties
 2. Support constituencies
 3. Possibly support LEPs
